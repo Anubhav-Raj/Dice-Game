@@ -8,6 +8,7 @@ import {
   ListItem,
   Stack,
   Text,
+  UnorderedList,
 } from "@chakra-ui/react";
 import { useState } from "react";
  import ReactDOM from 'react-dom';
@@ -51,7 +52,7 @@ const App = () => {
     <>
     
       {gameStarted ? (
-        <><Box  bg='black'>
+        <><Box   pb='10' bg='black'>
           <Stack
             h="100vh"
             maxW="900px"
@@ -97,7 +98,7 @@ const App = () => {
 
           <Stack mx="auto" maxW="1300px" bg='black' >
             <Heading as="h2"  color='white'> Games Rule</Heading>
-            <List>
+            <UnorderedList>
               <ListItem  color='white'>Select Number any number</ListItem>
               <ListItem  color='white'> Click on dice image to roll it</ListItem>
               <ListItem  color='white'>
@@ -107,7 +108,7 @@ const App = () => {
               <ListItem  color='white'>
                 if You are Wrong Score will be deducted by 2 points
               </ListItem>
-            </List>
+            </UnorderedList>
           </Stack>
           </Box>
         </>
